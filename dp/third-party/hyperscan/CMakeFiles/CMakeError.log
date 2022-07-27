@@ -1,0 +1,246 @@
+Performing C SOURCE FILE Test ARCH_X86_64 failed with the following output:
+Change Dir: /home/qianyikai/orion-dp/dp/third-party/hyperscan/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_723ad/fast"
+make[2]: Entering directory '/home/qianyikai/orion-dp/dp/third-party/hyperscan/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_723ad.dir/build.make CMakeFiles/cmTC_723ad.dir/build
+make[3]: Entering directory '/home/qianyikai/orion-dp/dp/third-party/hyperscan/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_723ad.dir/src.c.o
+/usr/bin/cc   -DARCH_X86_64   -o CMakeFiles/cmTC_723ad.dir/src.c.o   -c /home/qianyikai/orion-dp/dp/third-party/hyperscan/CMakeFiles/CMakeTmp/src.c
+/home/qianyikai/orion-dp/dp/third-party/hyperscan/CMakeFiles/CMakeTmp/src.c:2:2: error: #error not 64bit
+ #error not 64bit
+  ^~~~~
+CMakeFiles/cmTC_723ad.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_723ad.dir/src.c.o' failed
+make[3]: *** [CMakeFiles/cmTC_723ad.dir/src.c.o] Error 1
+make[3]: Leaving directory '/home/qianyikai/orion-dp/dp/third-party/hyperscan/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_723ad/fast' failed
+make[2]: *** [cmTC_723ad/fast] Error 2
+make[2]: Leaving directory '/home/qianyikai/orion-dp/dp/third-party/hyperscan/CMakeFiles/CMakeTmp'
+
+Source file was:
+#if !(defined(__x86_64__) || defined(_M_X64))
+#error not 64bit
+#endif
+int main(void) { return 0; }
+Performing C SOURCE FILE Test ARCH_IA32 failed with the following output:
+Change Dir: /home/qianyikai/orion-dp/dp/third-party/hyperscan/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_e9eb3/fast"
+make[2]: Entering directory '/home/qianyikai/orion-dp/dp/third-party/hyperscan/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_e9eb3.dir/build.make CMakeFiles/cmTC_e9eb3.dir/build
+make[3]: Entering directory '/home/qianyikai/orion-dp/dp/third-party/hyperscan/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e9eb3.dir/src.c.o
+/usr/bin/cc   -DARCH_IA32   -o CMakeFiles/cmTC_e9eb3.dir/src.c.o   -c /home/qianyikai/orion-dp/dp/third-party/hyperscan/CMakeFiles/CMakeTmp/src.c
+/home/qianyikai/orion-dp/dp/third-party/hyperscan/CMakeFiles/CMakeTmp/src.c:2:2: error: #error not 32bit
+ #error not 32bit
+  ^~~~~
+CMakeFiles/cmTC_e9eb3.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_e9eb3.dir/src.c.o' failed
+make[3]: *** [CMakeFiles/cmTC_e9eb3.dir/src.c.o] Error 1
+make[3]: Leaving directory '/home/qianyikai/orion-dp/dp/third-party/hyperscan/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_e9eb3/fast' failed
+make[2]: *** [cmTC_e9eb3/fast] Error 2
+make[2]: Leaving directory '/home/qianyikai/orion-dp/dp/third-party/hyperscan/CMakeFiles/CMakeTmp'
+
+Source file was:
+#if !(defined(__i386__) || defined(_M_IX86))
+#error not 32bit
+#endif
+int main(void) { return 0; }
+Determining if the function _aligned_malloc exists failed with the following output:
+Change Dir: /home/qianyikai/orion-dp/dp/third-party/hyperscan/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_c64c4/fast"
+make[2]: Entering directory '/home/qianyikai/orion-dp/dp/third-party/hyperscan/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_c64c4.dir/build.make CMakeFiles/cmTC_c64c4.dir/build
+make[3]: Entering directory '/home/qianyikai/orion-dp/dp/third-party/hyperscan/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c64c4.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -march=armv8-a+crc -DCHECK_FUNCTION_EXISTS=_aligned_malloc   -o CMakeFiles/cmTC_c64c4.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_c64c4
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c64c4.dir/link.txt --verbose=1
+/usr/bin/cc  -march=armv8-a+crc -DCHECK_FUNCTION_EXISTS=_aligned_malloc    -rdynamic CMakeFiles/cmTC_c64c4.dir/CheckFunctionExists.c.o  -o cmTC_c64c4 
+CMakeFiles/cmTC_c64c4.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `_aligned_malloc'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_c64c4.dir/build.make:97: recipe for target 'cmTC_c64c4' failed
+make[3]: *** [cmTC_c64c4] Error 1
+make[3]: Leaving directory '/home/qianyikai/orion-dp/dp/third-party/hyperscan/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_c64c4/fast' failed
+make[2]: *** [cmTC_c64c4/fast] Error 2
+make[2]: Leaving directory '/home/qianyikai/orion-dp/dp/third-party/hyperscan/CMakeFiles/CMakeTmp'
+
+
+Determining if the _LIBCPP_VERSION exist failed with the following output:
+Change Dir: /home/qianyikai/orion-dp/dp/third-party/hyperscan/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_dec46/fast"
+make[2]: Entering directory '/home/qianyikai/orion-dp/dp/third-party/hyperscan/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_dec46.dir/build.make CMakeFiles/cmTC_dec46.dir/build
+make[3]: Entering directory '/home/qianyikai/orion-dp/dp/third-party/hyperscan/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_dec46.dir/CheckSymbolExists.cxx.o
+/usr/bin/c++    -march=armv8-a+crc    -o CMakeFiles/cmTC_dec46.dir/CheckSymbolExists.cxx.o -c /home/qianyikai/orion-dp/dp/third-party/hyperscan/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+/home/qianyikai/orion-dp/dp/third-party/hyperscan/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx: In function ‘int main(int, char**)’:
+/home/qianyikai/orion-dp/dp/third-party/hyperscan/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:8:19: error: ‘_LIBCPP_VERSION’ was not declared in this scope
+   return ((int*)(&_LIBCPP_VERSION))[argc];
+                   ^~~~~~~~~~~~~~~
+/home/qianyikai/orion-dp/dp/third-party/hyperscan/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:8:19: note: suggested alternative: ‘_GLIBCXX_VERBOSE’
+   return ((int*)(&_LIBCPP_VERSION))[argc];
+                   ^~~~~~~~~~~~~~~
+                   _GLIBCXX_VERBOSE
+CMakeFiles/cmTC_dec46.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_dec46.dir/CheckSymbolExists.cxx.o' failed
+make[3]: *** [CMakeFiles/cmTC_dec46.dir/CheckSymbolExists.cxx.o] Error 1
+make[3]: Leaving directory '/home/qianyikai/orion-dp/dp/third-party/hyperscan/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_dec46/fast' failed
+make[2]: *** [cmTC_dec46/fast] Error 2
+make[2]: Leaving directory '/home/qianyikai/orion-dp/dp/third-party/hyperscan/CMakeFiles/CMakeTmp'
+
+File /home/qianyikai/orion-dp/dp/third-party/hyperscan/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <ciso646>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _LIBCPP_VERSION
+  return ((int*)(&_LIBCPP_VERSION))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Performing C SOURCE FILE Test CC_SELF_ASSIGN failed with the following output:
+Change Dir: /home/qianyikai/orion-dp/dp/third-party/hyperscan/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_c548a/fast"
+make[2]: Entering directory '/home/qianyikai/orion-dp/dp/third-party/hyperscan/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_c548a.dir/build.make CMakeFiles/cmTC_c548a.dir/build
+make[3]: Entering directory '/home/qianyikai/orion-dp/dp/third-party/hyperscan/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c548a.dir/src.c.o
+/usr/bin/cc   -march=armv8-a+crc -DCC_SELF_ASSIGN   -Wself-assign -o CMakeFiles/cmTC_c548a.dir/src.c.o   -c /home/qianyikai/orion-dp/dp/third-party/hyperscan/CMakeFiles/CMakeTmp/src.c
+cc: error: unrecognized command line option '-Wself-assign'; did you mean '-Wcast-align'?
+CMakeFiles/cmTC_c548a.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_c548a.dir/src.c.o' failed
+make[3]: *** [CMakeFiles/cmTC_c548a.dir/src.c.o] Error 1
+make[3]: Leaving directory '/home/qianyikai/orion-dp/dp/third-party/hyperscan/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_c548a/fast' failed
+make[2]: *** [cmTC_c548a/fast] Error 2
+make[2]: Leaving directory '/home/qianyikai/orion-dp/dp/third-party/hyperscan/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main(void) { return 0; }
+Performing C++ SOURCE FILE Test CXX_SELF_ASSIGN failed with the following output:
+Change Dir: /home/qianyikai/orion-dp/dp/third-party/hyperscan/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_b585d/fast"
+make[2]: Entering directory '/home/qianyikai/orion-dp/dp/third-party/hyperscan/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_b585d.dir/build.make CMakeFiles/cmTC_b585d.dir/build
+make[3]: Entering directory '/home/qianyikai/orion-dp/dp/third-party/hyperscan/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_b585d.dir/src.cxx.o
+/usr/bin/c++    -march=armv8-a+crc -DCXX_SELF_ASSIGN   -Wself-assign -o CMakeFiles/cmTC_b585d.dir/src.cxx.o -c /home/qianyikai/orion-dp/dp/third-party/hyperscan/CMakeFiles/CMakeTmp/src.cxx
+c++: error: unrecognized command line option '-Wself-assign'; did you mean '-Wcast-align'?
+CMakeFiles/cmTC_b585d.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_b585d.dir/src.cxx.o' failed
+make[3]: *** [CMakeFiles/cmTC_b585d.dir/src.cxx.o] Error 1
+make[3]: Leaving directory '/home/qianyikai/orion-dp/dp/third-party/hyperscan/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_b585d/fast' failed
+make[2]: *** [cmTC_b585d/fast] Error 2
+make[2]: Leaving directory '/home/qianyikai/orion-dp/dp/third-party/hyperscan/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C SOURCE FILE Test CC_PAREN_EQUALITY failed with the following output:
+Change Dir: /home/qianyikai/orion-dp/dp/third-party/hyperscan/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_9b270/fast"
+make[2]: Entering directory '/home/qianyikai/orion-dp/dp/third-party/hyperscan/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_9b270.dir/build.make CMakeFiles/cmTC_9b270.dir/build
+make[3]: Entering directory '/home/qianyikai/orion-dp/dp/third-party/hyperscan/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9b270.dir/src.c.o
+/usr/bin/cc   -march=armv8-a+crc -DCC_PAREN_EQUALITY   -Wparentheses-equality -o CMakeFiles/cmTC_9b270.dir/src.c.o   -c /home/qianyikai/orion-dp/dp/third-party/hyperscan/CMakeFiles/CMakeTmp/src.c
+cc: error: unrecognized command line option '-Wparentheses-equality'; did you mean '-Wparentheses'?
+CMakeFiles/cmTC_9b270.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_9b270.dir/src.c.o' failed
+make[3]: *** [CMakeFiles/cmTC_9b270.dir/src.c.o] Error 1
+make[3]: Leaving directory '/home/qianyikai/orion-dp/dp/third-party/hyperscan/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_9b270/fast' failed
+make[2]: *** [cmTC_9b270/fast] Error 2
+make[2]: Leaving directory '/home/qianyikai/orion-dp/dp/third-party/hyperscan/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main(void) { return 0; }
+Performing C++ SOURCE FILE Test CXX_WEAK_VTABLES failed with the following output:
+Change Dir: /home/qianyikai/orion-dp/dp/third-party/hyperscan/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_b7cc2/fast"
+make[2]: Entering directory '/home/qianyikai/orion-dp/dp/third-party/hyperscan/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_b7cc2.dir/build.make CMakeFiles/cmTC_b7cc2.dir/build
+make[3]: Entering directory '/home/qianyikai/orion-dp/dp/third-party/hyperscan/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_b7cc2.dir/src.cxx.o
+/usr/bin/c++    -march=armv8-a+crc -DCXX_WEAK_VTABLES   -Wweak-vtables -o CMakeFiles/cmTC_b7cc2.dir/src.cxx.o -c /home/qianyikai/orion-dp/dp/third-party/hyperscan/CMakeFiles/CMakeTmp/src.cxx
+c++: error: unrecognized command line option '-Wweak-vtables'; did you mean '-fjump-tables'?
+CMakeFiles/cmTC_b7cc2.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_b7cc2.dir/src.cxx.o' failed
+make[3]: *** [CMakeFiles/cmTC_b7cc2.dir/src.cxx.o] Error 1
+make[3]: Leaving directory '/home/qianyikai/orion-dp/dp/third-party/hyperscan/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_b7cc2/fast' failed
+make[2]: *** [cmTC_b7cc2/fast] Error 2
+make[2]: Leaving directory '/home/qianyikai/orion-dp/dp/third-party/hyperscan/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/qianyikai/orion-dp/dp/third-party/hyperscan/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_311ce/fast"
+make[2]: Entering directory '/home/qianyikai/orion-dp/dp/third-party/hyperscan/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_311ce.dir/build.make CMakeFiles/cmTC_311ce.dir/build
+make[3]: Entering directory '/home/qianyikai/orion-dp/dp/third-party/hyperscan/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_311ce.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -march=armv8-a+crc     -o CMakeFiles/cmTC_311ce.dir/CheckSymbolExists.c.o   -c /home/qianyikai/orion-dp/dp/third-party/hyperscan/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_311ce
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_311ce.dir/link.txt --verbose=1
+/usr/bin/cc  -march=armv8-a+crc      -rdynamic CMakeFiles/cmTC_311ce.dir/CheckSymbolExists.c.o  -o cmTC_311ce 
+CMakeFiles/cmTC_311ce.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x14): undefined reference to `pthread_create'
+CheckSymbolExists.c:(.text+0x18): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_311ce.dir/build.make:97: recipe for target 'cmTC_311ce' failed
+make[3]: *** [cmTC_311ce] Error 1
+make[3]: Leaving directory '/home/qianyikai/orion-dp/dp/third-party/hyperscan/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_311ce/fast' failed
+make[2]: *** [cmTC_311ce/fast] Error 2
+make[2]: Leaving directory '/home/qianyikai/orion-dp/dp/third-party/hyperscan/CMakeFiles/CMakeTmp'
+
+File /home/qianyikai/orion-dp/dp/third-party/hyperscan/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/qianyikai/orion-dp/dp/third-party/hyperscan/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_3833c/fast"
+make[2]: Entering directory '/home/qianyikai/orion-dp/dp/third-party/hyperscan/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_3833c.dir/build.make CMakeFiles/cmTC_3833c.dir/build
+make[3]: Entering directory '/home/qianyikai/orion-dp/dp/third-party/hyperscan/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3833c.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -march=armv8-a+crc  -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_3833c.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_3833c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3833c.dir/link.txt --verbose=1
+/usr/bin/cc  -march=armv8-a+crc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_3833c.dir/CheckFunctionExists.c.o  -o cmTC_3833c -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_3833c.dir/build.make:97: recipe for target 'cmTC_3833c' failed
+make[3]: *** [cmTC_3833c] Error 1
+make[3]: Leaving directory '/home/qianyikai/orion-dp/dp/third-party/hyperscan/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_3833c/fast' failed
+make[2]: *** [cmTC_3833c/fast] Error 2
+make[2]: Leaving directory '/home/qianyikai/orion-dp/dp/third-party/hyperscan/CMakeFiles/CMakeTmp'
+
+

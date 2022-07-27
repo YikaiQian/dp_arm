@@ -1,0 +1,11 @@
+prefix=/home/qianyikai/orion-dp/dp/third-party/.objs
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: Userspace RCU BulletProof
+Description: A userspace RCU (read-copy-update) library, bulletproof version
+Version: 0.14.0-pre
+Requires:
+Libs: -L${libdir} -lurcu-common -lurcu-bp
+Cflags: -I${includedir} 

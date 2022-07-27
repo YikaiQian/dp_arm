@@ -1,0 +1,11 @@
+prefix=/home/qianyikai/orion-dp/dp/third-party/.objs
+exec_prefix=/home/qianyikai/orion-dp/dp/third-party/.objs
+libdir=/home/qianyikai/orion-dp/dp/third-party/.objs/lib
+includedir=/home/qianyikai/orion-dp/dp/third-party/.objs/include
+
+Name: libhs
+Description: Intel(R) Hyperscan Library
+Version: 5.3.0
+Libs: -L${libdir} -lhs
+Libs.private:  -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc
+Cflags: -I${includedir}/hs

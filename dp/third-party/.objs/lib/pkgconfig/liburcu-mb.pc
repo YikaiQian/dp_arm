@@ -1,0 +1,11 @@
+prefix=/home/qianyikai/orion-dp/dp/third-party/.objs
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: Userspace RCU Memory barriers
+Description: A userspace RCU (read-copy-update) library, memory barriers version
+Version: 0.14.0-pre
+Requires:
+Libs: -L${libdir} -lurcu-common -lurcu-mb
+Cflags: -I${includedir} 
